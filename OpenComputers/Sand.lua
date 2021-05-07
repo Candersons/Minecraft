@@ -1,3 +1,10 @@
+--[[
+This program takes a block from an inventory below it (in this case sand, but it can be anything)
+and sieves it through an Ex Nihilo sieve. Before processing anything, the program asks the user
+how many blocks they would like to process, ending once that amount has been sieved. It drops
+whatever it picks up in it's first slot (I used a vacuum hopper (Thermal Expansion) to pick
+that up) in order to pick up the next block it wants to sieve.
+]]
 os = require("os")
 robot = require("robot")
 component = require("component")

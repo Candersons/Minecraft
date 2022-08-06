@@ -1,4 +1,4 @@
---Requires a loaded computer constantly sending a message
+--Requires a loaded computer constantly sending a message (in this case on channel 15)
 
 modem = peripheral.wrap("back")
 modem.open(15)

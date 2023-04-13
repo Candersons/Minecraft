@@ -8,6 +8,13 @@ blocks. Is cool. And was a pain to develop.
 Requires a second computer sending messages.
 This is how I learned the peripheral API of
 ComputerCraft.
+
+My comments occasionally say something along
+the lines of "will likely replace with" and
+then a better idea to how it is currently
+programmed. Such replacements will be
+unlikely unless I decide to work on this
+again.
 --]]
 
 rednet.open("front")

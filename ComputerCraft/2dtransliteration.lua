@@ -1,3 +1,42 @@
+--[[
+This is one of the coolest things I've made. This
+one program can be used to simultaneously set up
+anchors for a two dimensional transliteration
+(aka how gps works, but without up and down/
+without y values) and to ask for location.
+
+Three computers must be given ender modems and
+told their x and z values. This can be done
+in two different ways. Either create a file
+called "location.txt" in the home directory,
+or pass the computer its location through
+the command line, e.g.
+"2dtransliteration host 50 26"
+with the first value being the x coordinate,
+and the second being its z coordinate
+(referred to later in this program as y
+because y is not the value of depth in math).
+This will result in the computer waiting for
+a message asking it to send its location and
+distance. Upon receiving said message, it will
+send a table with an x and y value, as well as
+print to its screen that it has received a
+message asking for location.
+
+If you do not pass that you want the computer
+to act as a host in the command line, it will
+instead send a message asking for its location.
+It will then wait to receive three different
+messages, which states the location of the
+computer that sent the message, and saves the
+distance associated with that message (which
+computercraft itself gives with every wireless
+message). It then does some math, and prints
+the x and z coords. It calls the z coord y,
+because z is typically up/down in math. Not
+sure why Minecraft does that differently.
+--]]
+
 --Allows us to read our inputs
 input = {...}
  
@@ -174,5 +213,3 @@ end
  
 --Magic can't happen if we don't tell it to
 main()
-
---Pastebin link: https://pastebin.com/LPj0hpEu

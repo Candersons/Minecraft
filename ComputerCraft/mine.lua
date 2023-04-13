@@ -1,5 +1,11 @@
 --pastebin hVVXQChU
 
+--[[
+This program runs a quarry built with the mod
+Create. Uses gantry shafts. And lots of other
+blocks. Is cool. And was a pain to develop.
+--]]
+
 rednet.open("front")
 redstone.setOutput("bottom", true)
 --These lines are to make sure we have wireless

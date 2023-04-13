@@ -4,6 +4,10 @@
 This program runs a quarry built with the mod
 Create. Uses gantry shafts. And lots of other
 blocks. Is cool. And was a pain to develop.
+
+Requires a second computer sending messages.
+This is how I learned the peripheral API of
+ComputerCraft.
 --]]
 
 rednet.open("front")

@@ -1,3 +1,23 @@
+--[[
+The idea of this program was that
+it would be used to allow for the
+retrieval of EMCable items from
+the Minecraft mod ProjectE from
+one of the blocks that you can 
+save certain items in, and then
+take out with emc values rather
+than typical crafting methods.
+
+I then found out that the
+Refined Storage mod could read
+from those blocks directly, and
+using a turtle as an intermediary
+was useless. Which is a shame
+because this was a bit painful to
+write.
+--]]
+
+
 --Setting our output(chest) and our 
 --"crafter" the emc link.
 emc = peripheral.wrap("extendedexchange:compressed_refined_link_2")
@@ -195,5 +215,3 @@ end
 while(true) do
   main()
 end
-
---Pastebin link: https://pastebin.com/8TChc6xq

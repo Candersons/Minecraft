@@ -52,6 +52,9 @@ width = 4
 --Hard coded drill size. Already have the
 --replacement code written. Still testing quarry,
 --though, so not asking size is faster right now.
+    
+--Future me here, I don't think i ever did write
+--that code. I was lying to look cool. Probably.
 
 state = {0,0,0}
 print("\nStarted quarry\n")

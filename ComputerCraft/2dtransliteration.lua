@@ -171,12 +171,12 @@ a = circle[1][6]
 b = circle[2][6]
 c = circle[3][6]
  
-A = (-2 * circle[1][1][5].x) + (2 * circle[2][1][5].x)
-B = (-2 * circle[1][1][5].y) + (2 * circle[2][1][5].y)
-C = (a * a) - (b * b) - (circle[1][1][5].x * circle[1][1][5].x) + (circle[2][1][5].x * circle[2][1][5].x) - (circle[1][1][5].y * circle[1][1][5].y) + (circle[2][1][5].y * circle[2][1][5].y)
-D = (-2 * circle[2][1][5].x) + (2 * circle[3][1][5].x)
-E = (-2 * circle[2][1][5].y) + (2 * circle[3][1][5].y)
-F = (b * b) - (c * c) - (circle[2][1][5].x * circle[2][1][5].x) + (circle[3][1][5].x * circle[3][1][5].x) - (circle[2][1][5].y * circle[2][1][5].y) + (circle[3][1][5].y * circle[3][1][5].y)
+A = (-2 * circle[1][5].x) + (2 * circle[2][5].x)
+B = (-2 * circle[1][5].y) + (2 * circle[2][5].y)
+C = (a * a) - (b * b) - (circle[1][5].x * circle[1][5].x) + (circle[2][5].x * circle[2][5].x) - (circle[1][5].y * circle[1][5].y) + (circle[2][5].y * circle[2][5].y)
+D = (-2 * circle[2][5].x) + (2 * circle[3][5].x)
+E = (-2 * circle[2][5].y) + (2 * circle[3][5].y)
+F = (b * b) - (c * c) - (circle[2][5].x * circle[2][5].x) + (circle[3][5].x * circle[3][5].x) - (circle[2][5].y * circle[2][5].y) + (circle[3][5].y * circle[3][5].y)
  
 x = ((C*E) - (F*B)) / ((E*A) - (B*D))
 y = ((C*D) - (A*F)) / ((B*D) - (A*E))

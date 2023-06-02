@@ -152,7 +152,7 @@ while true do
   os.startTimer(1)
   local event = {os.pullEvent()}
   if event[1] == "modem_message" then
-    circle[i] = {event}
+    circle[i] = event
     i = i + 1
   end
   if i == 4 then
@@ -167,9 +167,9 @@ end
 --Here's all the math. I understand most of it,
 --but not enough to explain. Just know it took
 --a lot of fiddling in Desmos to get working.
-a = circle[1][1][6]
-b = circle[2][1][6]
-c = circle[3][1][6]
+a = circle[1][6]
+b = circle[2][6]
+c = circle[3][6]
  
 A = (-2 * circle[1][1][5].x) + (2 * circle[2][1][5].x)
 B = (-2 * circle[1][1][5].y) + (2 * circle[2][1][5].y)
